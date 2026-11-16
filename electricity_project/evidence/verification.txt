@@ -1,0 +1,121 @@
+PASS: five packaged CSV files are byte-for-byte copies of the supplied files.
+electricity: 45 rows
+water: 20 rows
+air_emissions: 30 rows
+ghg: 15 rows
+sources: 5 rows
+TOTAL: 110 observations
+Integrity: ok; foreign key errors: 0; all CSV cells preserved
+Database: C:\Users\User\Downloads\databasereport\electricity_project\electricity.db
+
+electricity: 45 rows
+water: 20 rows
+air_emissions: 30 rows
+ghg: 15 rows
+sources: 5 rows
+TOTAL: 110 observations
+Integrity: ok; foreign key errors: 0; all CSV cells preserved
+Database: C:\Users\User\Downloads\databasereport\electricity_project\electricity.db
+
+PASS: repeated builds retain 110 observations and 5 sources.
+
+SQL: SELECT dataset_type, COUNT(*) AS rows FROM all_observations GROUP BY dataset_type ORDER BY dataset_type
+dataset_type | rows
+----------------------------------------------------------------------
+air_emissions | 30
+electricity | 45
+ghg | 15
+water | 20
+(4 rows)
+
+
+SQL: SELECT COUNT(*) AS total_observations FROM all_observations
+total_observations
+----------------------------------------------------------------------
+110
+(1 rows)
+
+
+SQL: SELECT COUNT(*) AS total_sources FROM sources
+total_sources
+----------------------------------------------------------------------
+5
+(1 rows)
+
+
+PASS: year 2567 returns 22 observations across four datasets.
+PASS: all four dataset browse commands return expected counts.
+
+SQL: SELECT dataset_type, COUNT(*) AS observation_count
+FROM all_observations
+GROUP BY dataset_type
+ORDER BY dataset_type;
+
+dataset_type | observation_count
+----------------------------------------------------------------------
+air_emissions | 30
+electricity | 45
+ghg | 15
+water | 20
+(4 rows)
+
+
+
+SQL: SELECT id, year_be, category, quantity_original AS quantity, unit_original
+FROM electricity
+WHERE year_be = 2567
+ORDER BY id;
+
+id | year_be | category | quantity | unit_original
+----------------------------------------------------------------------
+21 | 2567 | Hydro | 6385.3 | GWh
+22 | 2567 | Thermal | 15566.29 | GWh
+23 | 2567 | Combined cycle | 44585.73 | GWh
+24 | 2567 | Diesel | 0.64 | GWh
+25 | 2567 | Purchased | 153845.08 | GWh
+42 | 2567 | Sales MEA | 58257.18 | GWh
+43 | 2567 | Sales PEA | 153255.85 | GWh
+44 | 2567 | Sales Laos | 2458.29 | GWh
+45 | 2567 | Sales Malaysia | 56.2 | GWh
+(9 rows)
+
+
+
+SQL: SELECT e.id, e.year_be, e.category, e.quantity_original AS quantity,
+       e.unit_original, e.source_reference, s.source_name, s.source_url
+FROM electricity AS e
+JOIN sources AS s ON e.source_id = s.source_id
+WHERE e.year_be = 2567
+ORDER BY e.id;
+
+id | year_be | category | quantity | unit_original | source_reference | source_name | source_url
+----------------------------------------------------------------------
+21 | 2567 | Hydro | 6385.3 | GWh | EGAT generation and purchase | EGAT generation and purchase | https://www.egat.co.th/home/statistics-generation-annual/
+22 | 2567 | Thermal | 15566.29 | GWh | EGAT generation and purchase | EGAT generation and purchase | https://www.egat.co.th/home/statistics-generation-annual/
+23 | 2567 | Combined cycle | 44585.73 | GWh | EGAT generation and purchase | EGAT generation and purchase | https://www.egat.co.th/home/statistics-generation-annual/
+24 | 2567 | Diesel | 0.64 | GWh | EGAT generation and purchase | EGAT generation and purchase | https://www.egat.co.th/home/statistics-generation-annual/
+25 | 2567 | Purchased | 153845.08 | GWh | EGAT generation and purchase | EGAT generation and purchase | https://www.egat.co.th/home/statistics-generation-annual/
+42 | 2567 | Sales MEA | 58257.18 | GWh | EGAT annual electricity sales | EGAT annual electricity sales | https://www.egat.co.th/home/statistics-transaction-annual/
+43 | 2567 | Sales PEA | 153255.85 | GWh | EGAT annual electricity sales | EGAT annual electricity sales | https://www.egat.co.th/home/statistics-transaction-annual/
+44 | 2567 | Sales Laos | 2458.29 | GWh | EGAT annual electricity sales | EGAT annual electricity sales | https://www.egat.co.th/home/statistics-transaction-annual/
+45 | 2567 | Sales Malaysia | 56.2 | GWh | EGAT annual electricity sales | EGAT annual electricity sales | https://www.egat.co.th/home/statistics-transaction-annual/
+(9 rows)
+
+
+
+SQL: SELECT dataset_type, source_id, year_be, TRIM(category) AS category,
+       TRIM(scope) AS scope, TRIM(metric) AS metric, TRIM(unit_original) AS unit,
+       COUNT(*) AS duplicate_count
+FROM all_observations
+GROUP BY dataset_type, source_id, year_be, TRIM(category), TRIM(scope), TRIM(metric), TRIM(unit_original)
+HAVING COUNT(*) > 1;
+
+dataset_type | source_id | year_be | category | scope | metric | unit | duplicate_count
+----------------------------------------------------------------------
+(0 rows)
+
+
+PASS: interactive menu works; writes through the demo are rejected.
+PASS: database lookup works from another working directory.
+PASS: invalid source reference is rejected and existing DB remains unchanged.
+Validation covers import fidelity and database behavior, not source fact verification.

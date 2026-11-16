@@ -1,0 +1,22 @@
+{
+  "built_at_utc": "2026-11-16T13:23:22.714140+00:00",
+  "rows": {
+    "electricity": 45,
+    "water": 20,
+    "air_emissions": 30,
+    "ghg": 15
+  },
+  "total_observations": 110,
+  "sources": 5,
+  "integrity_check": "ok",
+  "foreign_key_errors": [],
+  "all_imported_cells_match_csv": true,
+  "validation_scope": "Import structure and CSV-to-database equality; not source verification",
+  "input_sha256": {
+    "air_emissions.csv": "95a488146093764172bbb1aff3c0a9adea0c741635e404a34740ce1cb821a0b7",
+    "electricity.csv": "30f322ee85fd3d452f3099923ca48d6da701b259b87e8c5c8876b8d1bcc62e22",
+    "ghg.csv": "1fa703af678bbd7ac2949a27aa21d9812e45bc2da2d185b12e6125e8db32eac3",
+    "sources.csv": "ed8cdf8c04a89ea97d1104d91cab19748faabfe25b4d816db5743d2dbcb3a8a2",
+    "water.csv": "dfbd7d369a93529ddc33f22476be8d75397c07a5b364cbb435385bf73522f38f"
+  }
+}

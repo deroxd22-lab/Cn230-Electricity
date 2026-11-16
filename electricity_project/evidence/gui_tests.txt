@@ -1,0 +1,12 @@
+test_export_preserves_all_original_fields_and_order (test_app.DataTests.test_export_preserves_all_original_fields_and_order) ... ok
+test_protected_paths_and_empty_selection (test_app.DataTests.test_protected_paths_and_empty_selection) ... ok
+test_unique_cross_dataset_keys_and_filters (test_app.DataTests.test_unique_cross_dataset_keys_and_filters) ... ok
+test_ctrl_and_shift_selection (test_app.WindowTests.test_ctrl_and_shift_selection) ... ok
+test_drag_range (test_app.WindowTests.test_drag_range) ... ok
+test_export_button_exports_only_selected_rows (test_app.WindowTests.test_export_button_exports_only_selected_rows) ... ok
+test_filter_clears_hidden_selection_and_select_all (test_app.WindowTests.test_filter_clears_hidden_selection_and_select_all) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.339s
+
+OK

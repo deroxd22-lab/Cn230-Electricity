@@ -1,0 +1,46 @@
+﻿id,year_be,category,source_id,dataset_type,scope,metric,quantity,unit_original,quantity_status,source_url,source_reference
+1,2563,Hydro,1,electricity,EGAT annual statistics,EGAT generation and purchase,4513.67,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+2,2563,Thermal,1,electricity,EGAT annual statistics,EGAT generation and purchase,17593.29,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+3,2563,Combined cycle,1,electricity,EGAT annual statistics,EGAT generation and purchase,41434.33,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+4,2563,Diesel,1,electricity,EGAT annual statistics,EGAT generation and purchase,0.21,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+5,2563,Purchased,1,electricity,EGAT annual statistics,EGAT generation and purchase,128310.25,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+6,2564,Hydro,1,electricity,EGAT annual statistics,EGAT generation and purchase,4485.81,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+7,2564,Thermal,1,electricity,EGAT annual statistics,EGAT generation and purchase,18261.34,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+8,2564,Combined cycle,1,electricity,EGAT annual statistics,EGAT generation and purchase,38127.04,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+9,2564,Diesel,1,electricity,EGAT annual statistics,EGAT generation and purchase,0.1,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+10,2564,Purchased,1,electricity,EGAT annual statistics,EGAT generation and purchase,133913.92,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+11,2565,Hydro,1,electricity,EGAT annual statistics,EGAT generation and purchase,6568.44,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+12,2565,Thermal,1,electricity,EGAT annual statistics,EGAT generation and purchase,17111.59,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+13,2565,Combined cycle,1,electricity,EGAT annual statistics,EGAT generation and purchase,38108.78,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+14,2565,Diesel,1,electricity,EGAT annual statistics,EGAT generation and purchase,0.07,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+15,2565,Purchased,1,electricity,EGAT annual statistics,EGAT generation and purchase,139132.75,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+16,2566,Hydro,1,electricity,EGAT annual statistics,EGAT generation and purchase,6560.12,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+17,2566,Thermal,1,electricity,EGAT annual statistics,EGAT generation and purchase,15793.01,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+18,2566,Combined cycle,1,electricity,EGAT annual statistics,EGAT generation and purchase,45192.06,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+19,2566,Diesel,1,electricity,EGAT annual statistics,EGAT generation and purchase,0.07,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+20,2566,Purchased,1,electricity,EGAT annual statistics,EGAT generation and purchase,140402.54,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+21,2567,Hydro,1,electricity,EGAT annual statistics,EGAT generation and purchase,6385.3,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+22,2567,Thermal,1,electricity,EGAT annual statistics,EGAT generation and purchase,15566.29,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+23,2567,Combined cycle,1,electricity,EGAT annual statistics,EGAT generation and purchase,44585.73,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+24,2567,Diesel,1,electricity,EGAT annual statistics,EGAT generation and purchase,0.64,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+25,2567,Purchased,1,electricity,EGAT annual statistics,EGAT generation and purchase,153845.08,GWh,reported,https://www.egat.co.th/home/statistics-generation-annual/,EGAT generation and purchase
+26,2563,Sales MEA,2,electricity,EGAT annual statistics,EGAT annual electricity sales,52343.73,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+27,2563,Sales PEA,2,electricity,EGAT annual statistics,EGAT annual electricity sales,131558.55,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+28,2563,Sales Laos,2,electricity,EGAT annual statistics,EGAT annual electricity sales,1375.4,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+29,2563,Sales Malaysia,2,electricity,EGAT annual statistics,EGAT annual electricity sales,142.56,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+30,2564,Sales MEA,2,electricity,EGAT annual statistics,EGAT annual electricity sales,51323.03,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+31,2564,Sales PEA,2,electricity,EGAT annual statistics,EGAT annual electricity sales,136265.99,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+32,2564,Sales Laos,2,electricity,EGAT annual statistics,EGAT annual electricity sales,1266.17,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+33,2564,Sales Malaysia,2,electricity,EGAT annual statistics,EGAT annual electricity sales,32.92,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+34,2565,Sales MEA,2,electricity,EGAT annual statistics,EGAT annual electricity sales,53369.19,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+35,2565,Sales PEA,2,electricity,EGAT annual statistics,EGAT annual electricity sales,140680.96,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+36,2565,Sales Laos,2,electricity,EGAT annual statistics,EGAT annual electricity sales,841.24,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+37,2565,Sales Malaysia,2,electricity,EGAT annual statistics,EGAT annual electricity sales,2.92,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+38,2566,Sales MEA,2,electricity,EGAT annual statistics,EGAT annual electricity sales,55483.5,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+39,2566,Sales PEA,2,electricity,EGAT annual statistics,EGAT annual electricity sales,145382.07,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+40,2566,Sales Laos,2,electricity,EGAT annual statistics,EGAT annual electricity sales,1648.76,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+41,2566,Sales Malaysia,2,electricity,EGAT annual statistics,EGAT annual electricity sales,32.85,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+42,2567,Sales MEA,2,electricity,EGAT annual statistics,EGAT annual electricity sales,58257.18,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+43,2567,Sales PEA,2,electricity,EGAT annual statistics,EGAT annual electricity sales,153255.85,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+44,2567,Sales Laos,2,electricity,EGAT annual statistics,EGAT annual electricity sales,2458.29,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
+45,2567,Sales Malaysia,2,electricity,EGAT annual statistics,EGAT annual electricity sales,56.2,GWh,reported,https://www.egat.co.th/home/statistics-transaction-annual/,EGAT annual electricity sales
